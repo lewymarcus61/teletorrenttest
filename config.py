@@ -1,0 +1,4 @@
+api_id = 16418156
+api_hash = "f8431c21d3b515cfd44d7284271d1307"
+bot_token = "6273405056:AAEYDEwJgYAvLU9nkq7U6WUW3l1GJ66WnDA"
+owner_id = [1962438125]
