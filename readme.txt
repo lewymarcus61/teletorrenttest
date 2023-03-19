@@ -17,3 +17,13 @@ pip3 install -r requirements.txt
 
 ---------------------------------------
 
+fill your telegram api id, api hash and bot token in config.py
+
+----------------------------------------
+
+run the bot with this command
+
+python3 mybot.py
+
+---------------------------------------
+
