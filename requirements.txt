@@ -5,4 +5,3 @@ ffmpeg-python
 libtorrent
 requests
 Pyrogram
-python-magic
