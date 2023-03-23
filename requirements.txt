@@ -1,0 +1,9 @@
+opencv-python
+Pillow
+hachoir
+ffmpeg-python
+libtorrent
+requests
+Pyrogram
+python-magic
+rarfile
