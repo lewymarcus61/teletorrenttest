@@ -23,7 +23,7 @@ async def progress(current, total):
 
 @app.on_message(filters.command('sendvideo'))
 async def send_video(client, message):   
-    video_path = 'Tsukimichi Ending Theme 1.mp4'
+    video_path = 'download/[Erai-raws] One Piece - 1054 [480p][423D2D58].mkv'
     # Check if the video file exists
     if os.path.exists(video_path):
         caption = os.path.basename(video_path)
