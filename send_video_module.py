@@ -42,7 +42,7 @@ async def send_video(client: Client, chat_id: int, message: types.Message, video
                 duration=duration,
                 thumb=thumb_path,
                 caption=caption,
-                supports_streaming=True,
+                #supports_streaming=True,
                 disable_notification=True,
                 progress=progress
             )
