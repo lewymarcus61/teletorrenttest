@@ -74,7 +74,7 @@ async def leecher(client, message):
                     # Check if the video file exists
                     if os.path.exists(video_path):
                         video_size = os.path.getsize(video_path)
-                        if video_size > 2000000000:
+                        if video_size > 2000 * 1024 * 1024:
                             file_pathss = await make_split(message, video_path)
                             for video_path1 in file_pathss:
                                 try:
