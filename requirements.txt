@@ -8,3 +8,4 @@ Pyrogram
 python-magic
 rarfile
 TgCrypto
+speedtest-cli
