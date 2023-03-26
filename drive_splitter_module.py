@@ -15,7 +15,7 @@ async def make_split(message: types.Message, video_path: str):
         "Trying to split, Please Wait..."
     )
     output_directory_path = "temp/"
-    split_size = 2000 * 1024 * 1024
+    split_size = 1800 * 1024 * 1024
     equal_splits = False
     split_file(video_path, output_directory_path, split_size, equal_splits)
     await sent_message.delete()
