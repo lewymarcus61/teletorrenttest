@@ -65,9 +65,9 @@ async def handle_speedtest_command(client, message):
     await asyncio.sleep(2)
     delete_files_in_directory("download")
     delete_files_in_directory("temp")
-    await result_of_speedtest.edit("Done cleaning the space!)
+    await cleaning_feedback.edit("Done cleaning the space!)
     await asyncio.sleep(1)
-    await result_of_speedtest.delete()
+    await cleaning_feedback.delete()
 
 # Define a handler function for the /torrent command
 @app.on_message(filters.command("leech") & filters.private)
