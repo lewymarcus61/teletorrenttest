@@ -35,7 +35,8 @@ async def send_video(client: Client, chat_id: int, message: types.Message, video
         sent_message = await message.reply_text('Starting to Upload...')
         with open(video_path, "rb") as video_file:
             await client.send_video(
-                video=video_file,
+                chat_id,
+                video_file,
                 width=width,
                 height=height,
                 duration=duration,
