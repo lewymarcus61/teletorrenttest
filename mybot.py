@@ -41,7 +41,10 @@ async def start_handler(client, message):
     # edit the message to "What may I help?"
     await sent_message.edit("I can download torrent file")
     await asyncio.sleep(1)
-    await sent_message.edit("Send /leech to download torrent file.")
+    await sent_message.edit(
+        "Send /leech to download torrent file\n\n"
+        "Send /speedtest to test internet speed"
+    )
 
 # set onetime_lock
 onetime_lock = False
