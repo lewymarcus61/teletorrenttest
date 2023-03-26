@@ -98,8 +98,8 @@ async def download_magnet(message: types.Message, magnet_link):
             await sent_message.edit(
                 f"File Name: {file_name}\n\n"
                 f"Progress: {progress_com:.2f}%\n\n"
-                f"Download Rate: {down_rate_str}\n\n"
-                f"Upload Rate: {up_rate_str}\n\n"
+                f"Download Speed: {down_rate_str}\n\n"
+                f"Upload Speed: {up_rate_str}\n\n"
                 f"Peers: {num_peers}\n\n"
                 f"Seeds: {num_seeds}\n\n"
                 f"File Size: {file_size_str}\n\n"
