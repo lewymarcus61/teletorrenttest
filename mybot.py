@@ -8,6 +8,7 @@ from findvideo_module import check_file
 from drive_splitter_module import make_split
 from send_video_module import send_video
 from delete_module import delete_files_in_directory
+from speedtest_module import run_speed_test
 from pyrogram import Client, filters
 from config import (
     api_id,
@@ -44,6 +45,14 @@ async def start_handler(client, message):
 
 # set onetime_lock
 onetime_lock = False
+
+# Define a handler function for /speedtest command
+@app.on_message(filters.command('speedtest') & filters.private)
+async def handle_speedtest_command(client, message):
+    text = await run_speed_test()
+    result_of_speedtest = await message.reply_text(text)
+    await asyncio.sleep(5)
+    await result_of_speedtest.delete()
 
 # Define a handler function for the /torrent command
 @app.on_message(filters.command("leech") & filters.private)
