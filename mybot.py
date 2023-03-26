@@ -52,8 +52,9 @@ onetime_lock = False
 # Define a handler function for /speedtest command
 @app.on_message(filters.command('speedtest') & filters.private)
 async def handle_speedtest_command(client, message):
+    result_of_speedtest = await message.reply_text("Testing internet speed, Please Wait...!")
     text = await run_speed_test()
-    result_of_speedtest = await message.reply_text(text)
+    await result_of_speedtest.edit(text)
     await asyncio.sleep(5)
     await result_of_speedtest.delete()
 
